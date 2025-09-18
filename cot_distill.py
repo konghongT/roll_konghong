@@ -52,9 +52,9 @@ class DistillRunner():
         assert isinstance(prompt, list), "prompt must be a list"
         
         # Get API key from environment
-        #api_key =  "sk-1f735f5418d1453bb70600e8e82cd766"
+        #api_key =  "use_yourownapikey"
         #api_key = os.getenv("DEEPSEEK_API_KEY") 
-        api_key = "sk-37749e0fedf248f38b3d5c48a1221422"
+        api_key = "yourownapikey"
         if not api_key:
             raise ValueError("DEEPSEEK_API_KEY environment variable not set")
         
@@ -199,7 +199,7 @@ class DistillRunner():
             
             '''
             # Calculate similarity score
-            #api_key = "sk-155ff93dfcc141efb5e41dc416ea7d47" 
+            #api_key = "" 
             # api_key from aliyunbailian
             api_key = os.getenv("DASHSCOPE_API_KEY")
             score = calculate_text_similarity(
